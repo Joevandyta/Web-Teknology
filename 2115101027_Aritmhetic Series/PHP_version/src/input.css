@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-line{
+    @apply w-[30px] h-[5px] my-1 block rounded-full bg-black;
+}
+.menu-active> span:nth-child(1) {
+    @apply scale-0;
+}
+
+.menu-active> span:nth-child(2) {
+    @apply w-[30px] h-[30px] my-2    block rounded-full bg-transparent border-[5px] border-black;
+}
+.menu-active> span:nth-child(3) {
+    @apply scale-0;
+}
